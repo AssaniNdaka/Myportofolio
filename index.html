@@ -6,82 +6,84 @@
   <title>Assani Ndaka - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Reset & base styles */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
       background-color: #f4f7fa;
       color: #333;
     }
 
-    /* Header with background image */
-    header {
+    /* Hero Section */
+    .hero {
       position: relative;
       width: 100%;
-      height: 400px;
+      height: 100vh;
       background: url('professor.jpg') center/cover no-repeat;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       text-align: center;
       color: white;
     }
 
-    header::before {
+    .hero::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* overlay for readability */
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5); /* overlay for readability */
       z-index: 1;
     }
 
-    header .header-content {
+    .hero-content {
       position: relative;
       z-index: 2;
       max-width: 800px;
       padding: 0 20px;
     }
 
-    header h1 {
-      font-size: 2.8em;
+    .hero-content h1 {
+      font-size: 3em;
       margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 1.2em;
-      margin: 10px 0;
+    .hero-content h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      font-weight: 400;
     }
 
-    header p.intro {
+    .hero-content p {
       font-size: 1.1em;
-      margin-top: 15px;
-      color: white;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
-    .container {
+    /* Services Section */
+    .services {
       max-width: 1000px;
-      margin: 30px auto;
+      margin: -100px auto 40px; /* overlap slightly on hero */
       padding: 20px;
-    }
-
-    .cards {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: space-between;
-      margin-bottom: 40px;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
     }
 
     .card {
-      background: white;
+      background: rgba(255,255,255,0.95);
       flex: 1 1 30%;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.2s ease;
     }
 
@@ -94,9 +96,10 @@
       margin-bottom: 10px;
     }
 
+    /* Navigation */
     nav {
       text-align: center;
-      margin-top: 20px;
+      margin: 20px 0;
     }
 
     nav a {
@@ -111,6 +114,7 @@
       text-decoration: underline;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
@@ -119,59 +123,63 @@
       margin-top: 40px;
     }
 
-    /* Responsive adjustments */
+    /* Responsive */
     @media (max-width: 768px) {
-      .cards {
+      .services {
         flex-direction: column;
+        margin-top: -50px;
       }
       .card {
         flex: 1 1 100%;
+      }
+      .hero-content h1 {
+        font-size: 2.2em;
+      }
+      .hero-content h2 {
+        font-size: 1.2em;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with image and overlay text -->
-  <header>
-    <div class="header-content">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
       <h1>Welcome to Assani Ndaka's Portfolio</h1>
-      <p>Junior Web Developer | Freelancer | IT Enthusiast</p>
-      <p class="intro">
+      <h2>Junior Web Developer | Freelancer | IT Enthusiast</h2>
+      <p>
         Hi, I’m Assani Ndaka, a motivated learner and junior web developer. 
         I create websites, small applications, and digital solutions that provide value. 
         Explore my portfolio to see projects, services, and how to get in touch.
       </p>
     </div>
-  </header>
+  </section>
 
-  <div class="container">
-
-    <!-- Highlight Skills / Services -->
-    <div class="cards">
-      <div class="card">
-        <h3>Web Development</h3>
-        <p>Create responsive websites with HTML, CSS, and Bootstrap that are clean and professional.</p>
-      </div>
-      <div class="card">
-        <h3>Small Projects</h3>
-        <p>Build beginner-friendly web apps and prototypes using Python, Flask, and MySQL.</p>
-      </div>
-      <div class="card">
-        <h3>Freelance & Collaboration</h3>
-        <p>Work with startups, NGOs, and peers to deliver small IT solutions and digital literacy workshops.</p>
-      </div>
+  <!-- Services Section -->
+  <div class="services">
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Create responsive websites with HTML, CSS, and Bootstrap that are clean and professional.</p>
     </div>
-
-    <!-- Call to Action -->
-    <nav>
-      <a href="about_page.html">About Me</a>
-      <a href="service_page.html">Services</a>
-      <a href="contact_page.html">Contact</a>
-    </nav>
-
+    <div class="card">
+      <h3>Small Projects</h3>
+      <p>Build User-friendly web apps and prototypes using Python, Flask, and MySQL.</p>
+    </div>
+    <div class="card">
+      <h3>Freelance & Collaboration</h3>
+      <p>Work with startups, NGOs, and peers to deliver small IT solutions and digital literacy workshops.</p>
+    </div>
   </div>
 
+  <!-- Navigation -->
+  <nav>
+    <a href="about_page.html">About Me</a>
+    <a href="service_page.html">Services</a>
+    <a href="contact_page.html">Contact</a>
+  </nav>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 Assani Ndaka | All Rights Reserved</p>
   </footer>
