@@ -1,41 +1,123 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Assani Ndaka</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .login-form {
+            background: #ffffff;
+            padding: 20px;
+            margin: 30px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background: #004080;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+        .content img {
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #0056b3;
+        }
+        nav ul a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<html>
-    <body bgcolor="salmon">
-        <div class="login-form">
-            <h1>Login Form</h1>
-            <form action="#" method="post">
-                <p>User Name</p>
-                <input type="text" name="user" placeholder="User Name">
-                <p>Password</p>
-                <input type="password" name="password" placeholder="Password">
-                <button>Login</button>
-            </form>
-        </div>
-       <p>
-        <img src="professor.jpg" width="300" height="300">
-        <br>
-        welcome to assani limited. we offer quality <br>and affordable software solutions for <br>the banking industry</p><br>
+<body>
 
-       <p>navigate the following links to learn<br> more about our experience, products <br>and services that we offer.</p><br>
-       <br>
-       <ul> 
-        <li>
-            <a href="about_page.html"target="_blank"> about us</a>
-        </li>
+    <header>
+        <h1>Hello, I'm Assani Ndaka</h1>
+        <p>Full-Stack Web Developer | Problem Solver | Lifelong Learner</p>
+    </header>
 
-        <li>
-            <a href="service_page.html"target="_blank">our services</a>
-        </li>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <input type="text" name="user" placeholder="User Name" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
 
-        <li>
-            <a href="contact_page.html"target="_blank">contact us</a>
-        </li>
-       </ul>
+    <div class="content">
+        <img src="professor.jpg" width="300" height="300" alt="Profile Image">
+        <p>
+            Welcome to my personal portfolio.  
+            I am passionate about building modern, user-friendly software solutions that 
+            empower people and create meaningful change.  
+        </p>
+        <p>
+            My motivation comes from solving real problems, staying curious, and constantly 
+            improving my craft. This portfolio is a reflection of my journey, skills, and 
+            the projects I have worked on.  
+        </p>
+    </div>
 
-      
-    </body>
+    <nav>
+        <ul>
+            <li><a href="about_page.html">About Me</a></li>
+            <li><a href="service_page.html">My Services</a></li>
+            <li><a href="contact_page.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
 </html>
