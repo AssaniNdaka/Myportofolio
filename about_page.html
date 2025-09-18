@@ -1,54 +1,103 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>about us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Assani Ndaka</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        video {
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<html>
-    <body bgcolor="salmon">
-        <video width="250" height="200" controls>
-            <source src="myVideo.mp4" type="video/mp4">
+<body>
 
-        </video>
+    <video width="300" height="200" controls>
+        <source src="myVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-        <h1>personal information</h1>
-        <p>I am Assani Ndaka, a professional fullstack web developer and freelancer.</p>
-        <h1><b>Education background</b></h1>
-        <ol type="a">
-            <li>2016 completed  primary school education with an A in computer in japan</li>
-            <li>2017 - 2021 completed secondary level school with a B+ mean grade and A in computer studies</li>
-            <li>2021 joined code archive programming institute and completed mobile and web application programming</li>
-            <li>2022 graduated from kenyatta university with a first class honors division in computer information technolgy.</li>
+    <div class="section">
+        <h1>About Me</h1>
+        <p>
+            Hi, I’m <b>Assani Ndaka</b>, a passionate <b>Full-Stack Web Developer</b> and <b>Freelancer</b> 
+            with experience building dynamic and user-friendly web applications. 
+            I enjoy solving problems with technology and creating solutions that 
+            make a real impact.
+        </p>
+    </div>
+
+    <div class="section">
+        <h1>Education</h1>
+        <ol>
+            <li>Bachelor’s Degree in Information Technology – Kenyatta University </li>
+            <li>Full–Stack Web Delopment - Power Learn Project</li>
+            <li>Completed Secondary Education – Strong foundation in Computer Studies</li>
+            <li>Leadership and Prroblem Solving Techniques - Young African Leadership Initiative (YALI)</li>
+            <li>Soft Skills Training - Brighter Monday Kenya in Parternership with Mastercard Foundation</li>
         </ol>
+    </div>
 
-    <br>
-    <h1><b>work experience</b></h1>
-    <ol type="i">
-        <li>
-            taught computer basics at Donbosco technical training.
-        </li>
-        <li>worked at farmTechs limited for two years as front end developer</li>
-        <li>worked as senior mobile developer for 1 year at samix limited technologies</li>
-    </ol>
-    <br>
-    <h1><b>Tech Competiton and Awards</b></h1>
-    <ol type="1">
-        <li>
-            2019 won the regional award for the best web designer
-        </li>
-        <li>2021 won the android competion on the solutions challenge</li>
-        <li>2022 won the Hult prize on the modern tech solution for globle warming</li>
-    </ol>
-    <ul> 
-        <li>
-            <a href="home_page.html"target="_blank"> about page</a>
-        </li>
+    <div class="section">
+        <h1>Work Experience</h1>
+        <ol>
+            <li>Freelance Web Developer – Designed and deployed websites for startups and NGOs</li>
+            <li>Internship at Golearn Empowerment Exchange – Assisted in front-end development projects</li>
+            <li>Volunteer Trainer – Conducted digital literacy workshops for yout at SIR Africa</li>
+        </ol>
+    </div>
 
-        <li>
-            <a href="service_page.html"target="_blank">our services</a>
-        </li>
+    <div class="section">
+        <h1>Awards & Achievements</h1>
+        <ol>
+            <li>Top 10 finalist, Young African Leadership Initiative (2024)</li>
+            <li>Participant, Soft Skills Training with Brighter Monday Kenya (2025)</li>
+            <li>Recognized for contributions in tech-based community projects (2023)</li>
+            <li>Certificate of Achievement – Full Stack Developer at Power Learn Project</li>
+        </ol>
+    </div>
 
-        <li>
-            <a href="contact_page.html"target="_blank">contact us</a>
-        </li>
-       </ul>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service_page.html">Services</a></li>
+            <li><a href="contact_page.html">Contact</a></li>
+        </ul>
+    </nav>
+
 </body>
 </html>
