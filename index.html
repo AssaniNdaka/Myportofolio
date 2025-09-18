@@ -1,123 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | Assani Ndaka</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #0056b3;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .login-form {
-            background: #ffffff;
-            padding: 20px;
-            margin: 30px auto;
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .login-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #0056b3;
-        }
-        .login-form input {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-        }
-        .login-form button {
-            width: 100%;
-            padding: 10px;
-            background: #0056b3;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-        .login-form button:hover {
-            background: #004080;
-        }
-        .content {
-            text-align: center;
-            padding: 20px;
-        }
-        .content img {
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #0056b3;
-        }
-        nav ul a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Assani Ndaka</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+    header {
+      background-color: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .intro img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .intro p {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .login-form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 350px;
+      margin: 20px auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .login-form h2 {
+      text-align: center;
+      color: #0056b3;
+      margin-bottom: 20px;
+    }
+    .login-form input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .login-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-form button:hover {
+      background-color: #003d80;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Hello, I'm Assani Ndaka</h1>
-        <p>Full-Stack Web Developer | Problem Solver | Lifelong Learner</p>
-    </header>
+  <header>
+    <h1>Welcome to Assani Ndaka's Portfolio</h1>
+    <p>Building simple and impactful IT solutions</p>
+  </header>
 
-    <div class="login-form">
-        <h2>Login</h2>
-        <form action="#" method="post">
-            <input type="text" name="user" placeholder="User Name" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
+  <div class="container">
+
+    <div class="intro">
+      <img src="professor.jpg" alt="Assani Ndaka">
+      <p>
+        Hi, I’m <b>Assani Ndaka</b>, a motivated learner and junior web developer.
+        I create websites, small applications, and digital solutions that provide value.
+        Explore my portfolio to see projects, services, and how to get in touch.
+      </p>
     </div>
 
-    <div class="content">
-        <img src="professor.jpg" width="300" height="300" alt="Profile Image">
-        <p>
-            Welcome to my personal portfolio.  
-            I am passionate about building modern, user-friendly software solutions that 
-            empower people and create meaningful change.  
-        </p>
-        <p>
-            My motivation comes from solving real problems, staying curious, and constantly 
-            improving my craft. This portfolio is a reflection of my journey, skills, and 
-            the projects I have worked on.  
-        </p>
+    <div class="login-form">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <input type="text" name="user" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Login</button>
+      </form>
     </div>
 
     <nav>
-        <ul>
-            <li><a href="about_page.html">About Me</a></li>
-            <li><a href="service_page.html">My Services</a></li>
-            <li><a href="contact_page.html">Contact</a></li>
-        </ul>
+      <a href="about_page.html">About Me</a>
+      <a href="service_page.html">Services</a>
+      <a href="contact_page.html">Contact</a>
     </nav>
+
+  </div>
 
 </body>
 </html>
